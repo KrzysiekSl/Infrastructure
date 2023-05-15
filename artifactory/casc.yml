@@ -1,3 +1,56 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          id: "artifactory"
+          password: "password"
+          scope: GLOBAL
+          username: "admin"
+      - basicSSHUserPrivateKey:
+          id: "jenkins_agent"
+          username: "jenkins"
+          privateKeySource:
+            directEntry:
+              privateKey:
+              -----BEGIN OPENSSH PRIVATE KEY-----
+              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
+              -----END OPENSSH PRIVATE KEY-----
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
